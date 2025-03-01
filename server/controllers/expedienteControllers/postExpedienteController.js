@@ -1,11 +1,11 @@
 const {Expediente}=require('../../db');
 
 const postExpedienteController=async (titulo,descripcion)=>{
-    const uploadResult=await Expediente.create({
+    const postExpedienteController=await Expediente.create({
         titulo,
         descripcion
     })
-    return uploadResult.dataValues;
+    return postExpedienteController;
 };
 
 module.exports={
